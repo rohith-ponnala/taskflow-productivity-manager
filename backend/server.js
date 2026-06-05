@@ -11,7 +11,11 @@ const todoRoutes = require("./routes/todoRoutes");
 dotenv.config();
 connectDB();
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 
 app.use(express.json());
 
