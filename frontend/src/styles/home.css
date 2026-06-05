@@ -1,0 +1,296 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#f8fafc;
+color:#0f172a;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:white;
+box-shadow:0 2px 15px rgba(0,0,0,.05);
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.logo-section{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo-circle{
+width:50px;
+height:50px;
+border-radius:50%;
+background:linear-gradient(135deg,#2563eb,#3b82f6);
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:24px;
+font-weight:700;
+box-shadow:0 5px 15px rgba(37,99,235,.3);
+}
+
+.brand-name{
+font-size:2rem;
+font-weight:800;
+color:#0f172a;
+}
+
+.nav-buttons{
+display:flex;
+gap:12px;
+}
+
+.nav-btn{
+padding:10px 18px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-weight:600;
+background:#e2e8f0;
+transition:.3s;
+}
+
+.nav-btn:hover{
+transform:translateY(-2px);
+}
+
+.primary-btn{
+background:#2563eb;
+color:white;
+box-shadow:0 8px 20px rgba(37,99,235,.25);
+}
+
+.primary-btn:hover{
+background:#1d4ed8;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+padding:120px 8%;
+text-align:center;
+}
+
+.hero h1{
+font-size:4rem;
+font-weight:800;
+line-height:1.2;
+margin-bottom:25px;
+color:#0f172a;
+}
+
+.hero p{
+max-width:750px;
+margin:auto;
+font-size:1.15rem;
+line-height:1.8;
+color:#64748b;
+}
+
+.hero-buttons{
+margin-top:40px;
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.hero-btn{
+padding:14px 30px;
+border:none;
+border-radius:12px;
+font-size:1rem;
+font-weight:600;
+cursor:pointer;
+background:#2563eb;
+color:white;
+transition:.3s;
+box-shadow:0 10px 25px rgba(37,99,235,.25);
+}
+
+.hero-btn:hover{
+transform:translateY(-3px);
+}
+
+.secondary-btn{
+background:white;
+color:#2563eb;
+border:2px solid #2563eb;
+box-shadow:none;
+}
+
+/* =========================
+   FEATURES
+========================= */
+
+.features{
+padding:80px 8%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.feature-card{
+background:white;
+padding:35px;
+border-radius:18px;
+box-shadow:0 10px 25px rgba(0,0,0,.05);
+transition:.3s;
+}
+
+.feature-card:hover{
+transform:translateY(-8px);
+}
+
+.feature-icon{
+font-size:2rem;
+margin-bottom:15px;
+}
+
+.feature-card h3{
+margin-bottom:12px;
+font-size:1.4rem;
+}
+
+.feature-card p{
+color:#64748b;
+line-height:1.6;
+}
+
+/* =========================
+   WHY SECTION
+========================= */
+
+.why-section{
+padding:80px 8%;
+text-align:center;
+}
+
+.why-section h2{
+font-size:2.5rem;
+margin-bottom:40px;
+}
+
+.why-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.why-card{
+background:white;
+padding:25px;
+border-radius:15px;
+font-weight:600;
+box-shadow:0 5px 15px rgba(0,0,0,.05);
+}
+
+/* =========================
+   STATS
+========================= */
+
+.stats{
+padding:80px 8%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.stat-card{
+background:linear-gradient(135deg,#2563eb,#3b82f6);
+color:white;
+padding:40px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 15px 30px rgba(37,99,235,.2);
+}
+
+.stat-card h2{
+font-size:2.8rem;
+margin-bottom:10px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+background:#0f172a;
+color:white;
+padding:50px 20px;
+text-align:center;
+margin-top:60px;
+}
+
+footer h3{
+font-size:1.8rem;
+margin-bottom:10px;
+}
+
+footer p{
+margin:8px 0;
+color:#cbd5e1;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+.navbar{
+flex-direction:column;
+gap:15px;
+padding:20px;
+}
+
+.brand-name{
+font-size:1.6rem;
+}
+
+.hero{
+padding:80px 20px;
+}
+
+.hero h1{
+font-size:2.5rem;
+}
+
+.hero p{
+font-size:1rem;
+}
+
+.hero-buttons{
+flex-direction:column;
+}
+
+.hero-btn{
+width:100%;
+}
+
+.features,
+.stats,
+.why-grid{
+grid-template-columns:1fr;
+}
+
+}

@@ -1,0 +1,105 @@
+body.dark{
+background:#020617;
+color:white;
+}
+
+body.dark .dashboard{
+background:#020617;
+}
+
+body.dark .dashboard-logo,
+body.dark .dashboard-subtitle{
+color:white;
+}
+
+body.dark .card h3,
+body.dark .todo-item span,
+body.dark .profile-card h1,
+body.dark .profile-stat-card p{
+color:white;
+}
+
+body.dark .card,
+body.dark .todo-item,
+body.dark .empty-state,
+body.dark .profile-card,
+body.dark .profile-stat-card{
+background:#0f172a;
+color:white;
+}
+body.dark .card p{
+color:white !important;
+}
+
+body.dark .card h3{
+color:#cbd5e1 !important;
+}
+body.dark input,
+body.dark select{
+background:#1e293b;
+color:white;
+border:1px solid #334155;
+}
+
+body.dark .todo-item span{
+color:white;
+}
+
+body.dark .priority-badge{
+color:#cbd5e1;
+}
+
+body.dark .due-date{
+color:#94a3b8;
+}
+
+body.dark .profile-menu{
+background:#0f172a;
+color:white;
+}
+
+body.dark .profile-menu button{
+background:#1e293b;
+color:white;
+}
+
+body.dark .calendar-box{
+background:#0f172a;
+}
+
+body.dark .react-calendar{
+background:#0f172a;
+color:white;
+border:none;
+}
+
+body.dark .react-calendar__tile{
+color:white;
+}
+body.dark .calendar-task-list{
+background:#0f172a;
+color:white;
+border:1px solid #1e293b;
+}
+
+body.dark .calendar-task-list h3{
+color:white;
+}
+
+body.dark .calendar-task-list p{
+color:#cbd5e1;
+}
+body.dark .react-calendar__month-view__weekdays{
+color:white;
+}
+
+body.dark .react-calendar__navigation button{
+color:white;
+}
+
+body.dark .react-calendar__month-view__days__day{
+color:white;
+}
+body.dark .dashboard-logo{
+color:white !important;
+}

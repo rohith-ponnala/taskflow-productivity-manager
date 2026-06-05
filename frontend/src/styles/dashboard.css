@@ -1,0 +1,652 @@
+.dashboard-logo{
+  font-size:2rem;
+  font-weight:800;
+  color:#0f172a;
+}
+.welcome-banner{
+  margin:20px 0; /* reduce */
+}
+.welcome-banner{
+background:linear-gradient(
+135deg,
+#2563eb,
+#3b82f6
+);
+color:white;
+padding:28px;
+border-radius:22px;
+margin-bottom:30px;
+box-shadow:
+0 15px 35px
+rgba(37,99,235,.25);
+}
+
+
+.welcome-banner h2{
+font-size:1.8rem;
+margin-bottom:10px;
+}
+
+.welcome-banner p{
+opacity:.9;
+}
+
+.stat-icon{
+display:block;
+font-size:2rem;
+margin-bottom:12px;
+}
+
+.card{
+position:relative;
+overflow:hidden;
+}
+
+.card::after{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:4px;
+background:linear-gradient(
+90deg,
+#2563eb,
+#3b82f6
+);
+}
+.dashboard{
+  max-width:1200px;
+  margin:auto;
+  padding:30px;
+  min-height:100vh;
+  transition:.3s;
+}
+
+.dashboard h1{
+text-align:center;
+font-size:3rem;
+font-weight:800;
+color:#0f172a;
+margin-bottom:15px;
+}
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-bottom:20px;
+}
+
+.card{
+background:white;
+padding:18px;
+border-radius:18px;
+text-align:center;
+box-shadow:0 10px 30px rgba(15,23,42,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card h3{
+font-size:1.1rem;
+color:#64748b;
+margin-bottom:10px;
+}
+
+.card p{
+font-size:1.8rem;
+font-weight:800;
+color:#0f172a;
+}
+@media(max-width:768px){
+.dashboard h1{
+font-size:2rem;
+}
+
+.welcome-banner h2{
+font-size:1.4rem;
+}
+}
+.welcome-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:20px;
+}
+
+
+@media(max-width:768px){
+
+.welcome-header{
+flex-direction:column;
+align-items:flex-start;
+}
+
+.user-avatar{
+width:55px;
+height:55px;
+font-size:1.4rem;
+}
+}
+.dashboard-navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:30px;
+}
+
+.nav-right{
+display:flex;
+align-items:center;
+gap:20px;
+}
+/* ---------- Calendar ---------- */
+
+.calendar-box{
+  margin-top:30px;
+  background:white;
+  padding:25px;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+} 
+/* ---------- Light Mode ---------- */
+
+body:not(.dark) .dashboard{
+  background:#f5f7fb;
+  color:#111827;
+}
+
+body:not(.dark) .dashboard-logo{
+  color:#111827;
+}
+body:not(.dark) h1,
+body:not(.dark) h2,
+body:not(.dark) h3{
+  color:#0f172a;
+}
+
+body:not(.dark) p{
+  color:#475569;
+}
+
+body:not(.dark) .todo-item{
+  background:white;
+  color:#111827;
+}
+
+/* ---------- Profile Dropdown ---------- */
+
+.profile-wrapper{
+  position:relative;
+}
+
+.profile-avatar{
+  width:56px;
+  height:56px;
+  border-radius:50%;
+  background:linear-gradient(
+    135deg,
+    #2563eb,
+    #4f46e5
+  );
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:24px;
+  font-weight:700;
+  cursor:pointer;
+  box-shadow:
+    0 10px 25px
+    rgba(37,99,235,.25);
+}
+
+.profile-menu{
+  position:absolute;
+  right:0;
+  top:70px;
+  width:280px;
+  background:white;
+  border-radius:20px;
+  padding:20px;
+  box-shadow:
+    0 15px 40px
+    rgba(0,0,0,.15);
+  z-index:999;
+}
+
+.profile-user{
+  display:flex;
+  align-items:center;
+  gap:15px;
+  margin-bottom:15px;
+}
+
+.profile-user-avatar{
+  width:55px;
+  height:55px;
+  border-radius:50%;
+  background:#2563eb;
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:22px;
+  font-weight:700;
+}
+
+.profile-menu button{
+  width:100%;
+  margin-top:10px;
+  padding:12px;
+  border:none;
+  border-radius:12px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.dropdown-btn{
+width:100%;
+padding:12px;
+border:none;
+border-radius:12px;
+cursor:pointer;
+font-weight:600;
+background:#f8fafc;
+transition:.3s;
+}
+
+.dropdown-btn:hover{
+background:#e2e8f0;
+}
+/* ==========================
+   ADD TASK SECTION
+========================== */
+
+.add-task-section{
+display:flex;
+justify-content:center;
+margin:30px 0;
+}
+
+.add-task-btn{
+border:none;
+padding:16px 32px;
+border-radius:16px;
+font-size:1rem;
+font-weight:700;
+cursor:pointer;
+color:white;
+background:linear-gradient(
+135deg,
+#2563eb,
+#3b82f6
+);
+box-shadow:
+0 15px 35px
+rgba(37,99,235,.25);
+transition:.3s;
+}
+
+.add-task-btn:hover{
+transform:translateY(-4px);
+box-shadow:
+0 20px 40px
+rgba(37,99,235,.35);
+}
+
+/* ==========================
+   MODAL
+========================== */
+
+.modal-overlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:
+rgba(15,23,42,.55);
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:9999;
+backdrop-filter:blur(5px);
+}
+
+.task-modal{
+width:100%;
+max-width:550px;
+background:white;
+border-radius:24px;
+padding:25px;
+box-shadow:
+0 25px 60px
+rgba(0,0,0,.25);
+animation:popup .25s ease;
+}
+
+@keyframes popup{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.modal-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:20px;
+}
+
+.modal-header h2{
+margin:0;
+font-size:1.4rem;
+}
+
+.close-btn{
+background:none;
+border:none;
+font-size:1.4rem;
+cursor:pointer;
+}
+
+.modal-body{
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+.modal-body label{
+font-weight:700;
+color:#334155;
+}
+
+.modal-body input,
+.modal-body textarea,
+.modal-body select{
+padding:14px;
+border:2px solid #e2e8f0;
+border-radius:12px;
+font-size:.95rem;
+outline:none;
+transition:.3s;
+}
+
+.modal-body input:focus,
+.modal-body textarea:focus,
+.modal-body select:focus{
+border-color:#2563eb;
+}
+
+.modal-footer{
+display:flex;
+justify-content:flex-end;
+gap:12px;
+margin-top:25px;
+}
+
+.cancel-btn{
+border:none;
+padding:12px 20px;
+border-radius:12px;
+cursor:pointer;
+background:#e2e8f0;
+font-weight:700;
+}
+
+.save-btn{
+border:none;
+padding:12px 24px;
+border-radius:12px;
+cursor:pointer;
+font-weight:700;
+color:white;
+background:
+linear-gradient(
+135deg,
+#2563eb,
+#3b82f6
+);
+}
+
+
+/* ==========================
+   CALENDAR HEADER
+========================== */
+
+.panel-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:20px;
+gap:10px;
+flex-wrap:wrap;
+}
+
+.task-summary{
+background:#dbeafe;
+color:#2563eb;
+padding:8px 14px;
+border-radius:999px;
+font-weight:700;
+}
+
+.selected-date{
+background:#eff6ff;
+color:#2563eb;
+padding:8px 14px;
+border-radius:999px;
+font-weight:700;
+}
+
+/* ==========================
+   CALENDAR BADGE
+========================== */
+
+.calendar-badge{
+position:absolute;
+top:6px;
+right:6px;
+width:24px;
+height:24px;
+border-radius:50%;
+background:#2563eb;
+color:white;
+font-size:.8rem;
+font-weight:700;
+display:flex;
+justify-content:center;
+align-items:center;
+box-shadow:
+0 5px 15px
+rgba(37,99,235,.4);
+}
+
+.today-tile{
+background:#eff6ff !important;
+border:2px solid #2563eb !important;
+border-radius:16px;
+}
+
+/* ==========================
+   TASK PANEL
+========================== */
+
+.task-top{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:10px;
+margin-bottom:10px;
+flex-wrap:wrap;
+}
+
+.task-description{
+margin:10px 0;
+color:#64748b;
+line-height:1.5;
+}
+
+.task-meta{
+display:flex;
+justify-content:space-between;
+margin-top:10px;
+font-size:.9rem;
+color:#64748b;
+flex-wrap:wrap;
+gap:10px;
+}
+
+.priority-indicator{
+padding:6px 12px;
+border-radius:999px;
+font-size:.8rem;
+font-weight:700;
+}
+
+.high-priority{
+background:#fee2e2;
+color:#dc2626;
+}
+
+.medium-priority{
+background:#fef3c7;
+color:#d97706;
+}
+
+.low-priority{
+background:#dcfce7;
+color:#16a34a;
+}
+
+/* ==========================
+   TASK ACTIONS
+========================== */
+
+.task-actions{
+display:flex;
+gap:10px;
+margin-top:15px;
+}
+
+.complete-btn{
+flex:1;
+border:none;
+padding:12px;
+border-radius:10px;
+cursor:pointer;
+font-weight:700;
+background:#22c55e;
+color:white;
+}
+
+.complete-btn:hover{
+background:#16a34a;
+}
+
+.delete-btn{
+flex:1;
+border:none;
+padding:12px;
+border-radius:10px;
+cursor:pointer;
+font-weight:700;
+background:#ef4444;
+color:white;
+}
+
+.delete-btn:hover{
+background:#dc2626;
+}
+
+/* ==========================
+   EMPTY STATE
+========================== */
+
+.empty-icon{
+font-size:3rem;
+margin-bottom:10px;
+}
+
+.empty-day h3{
+margin-bottom:8px;
+}
+
+/* ==========================
+   CALENDAR IMPROVEMENTS
+========================== */
+
+.react-calendar{
+width:100%;
+border:none;
+font-family:inherit;
+}
+
+.react-calendar__tile{
+height:90px;
+border-radius:16px;
+position:relative;
+transition:.25s;
+}
+
+.react-calendar__tile:hover{
+background:#dbeafe;
+transform:scale(1.03);
+}
+
+.react-calendar__tile--active{
+background:#2563eb !important;
+color:white !important;
+border-radius:16px;
+}
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:900px){
+
+.calendar-layout{
+grid-template-columns:1fr;
+}
+
+.task-actions{
+flex-direction:column;
+}
+
+.task-modal{
+width:92%;
+}
+
+.panel-header{
+flex-direction:column;
+align-items:flex-start;
+}
+
+}
+
+.search-box{
+margin-bottom:20px;
+}
+
+.search-box input{
+width:100%;
+padding:14px;
+border:2px solid #e2e8f0;
+border-radius:12px;
+font-size:1rem;
+outline:none;
+}
+
+.search-box input:focus{
+border-color:#2563eb;
+}
